@@ -21,7 +21,7 @@ surprising because it's a very colorful colorscheme, but:
 
 [pencil]: https://github.com/reedes/vim-colors-pencil
 
-![Screenshot](screenshot.png)
+![Screenshot](shot.png)
 
 Not super exciting...
 
