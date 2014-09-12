@@ -182,6 +182,13 @@ call s:h("ColorColumn",   {"bg": s:bg_subtle})
 call s:h("MatchParen",    {"bg": s:bg_subtle, "fg": s:norm})
 call s:h("qfLineNr",      {"fg": s:medium_gray})
 
+call s:h("htmlH1",        {"bg": s:bg, "fg": s:norm})
+call s:h("htmlH2",        {"bg": s:bg, "fg": s:norm})
+call s:h("htmlH3",        {"bg": s:bg, "fg": s:norm})
+call s:h("htmlH4",        {"bg": s:bg, "fg": s:norm})
+call s:h("htmlH5",        {"bg": s:bg, "fg": s:norm})
+call s:h("htmlH6",        {"bg": s:bg, "fg": s:norm})
+
 " Signify, git-gutter
 hi link SignifySignAdd              LineNr
 hi link SignifySignDelete           LineNr
