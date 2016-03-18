@@ -49,7 +49,6 @@ if &background == "dark"
   let s:bg_very_subtle  = s:subtle_black
   let s:norm            = s:lighter_gray
   let s:norm_subtle     = s:light_gray
-  let s:norm_strong     = s:white
   let s:purple          = s:light_purple
   let s:cyan            = s:light_cyan
   let s:green           = s:light_green
@@ -61,7 +60,6 @@ else
   let s:bg_very_subtle  = s:lighter_gray
   let s:norm            = s:light_black
   let s:norm_subtle     = s:lighter_black
-  let s:norm_strong     = s:black
   let s:purple          = s:dark_purple
   let s:cyan            = s:dark_cyan
   let s:green           = s:dark_green
@@ -106,9 +104,10 @@ hi! link Operator         Statement
 hi! link Keyword          Statement
 hi! link Exception        Statement
 
-call s:h("PreProc",       {"fg": s:norm_strong})
-hi! link Include          Normal
-hi! link Define           Normal
+"call s:h("PreProc",       {"fg": s:red})
+hi! link PreProc          Normal
+hi! link Include          PreProc
+hi! link Define           PreProc
 hi! link Macro            PreProc
 hi! link PreCondit        PreProc
 
