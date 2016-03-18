@@ -81,8 +81,7 @@ endfunction
 
 call s:h("Normal",        {"bg": s:bg, "fg": s:norm})
 call s:h("Cursor",        {"bg": s:blue, "fg": s:norm })
-call s:h("Comment",       {"fg": s:medium_gray, "gui": "italic"})
-call s:h("String",        {"fg": s:norm_subtle})
+call s:h("Comment",       {"fg": s:bg_subtle, "gui": "italic"})
 
 "call s:h("Constant",      {"fg": s:cyan})
 hi! link Constant         Normal
@@ -90,6 +89,7 @@ hi! link Character        Constant
 hi! link Number           Constant
 hi! link Boolean          Constant
 hi! link Float            Constant
+hi! link String           Constant
 
 "call s:h("Identifier",    {"fg": s:dark_blue})
 hi! link Identifier       Normal
