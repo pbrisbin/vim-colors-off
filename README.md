@@ -38,6 +38,4 @@ Slightly out of date, not super exciting...
 :colorscheme off
 ```
 
-Supports both `background=light` and `background=dark`. I use dark, so 
-that will always be the more tested.
-
+Supports both `background=light` and `background=dark`.
