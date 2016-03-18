@@ -23,7 +23,7 @@ surprising because it's a very colorful colorscheme, but:
 
 ![Screenshot](shot.png)
 
-Not super exciting...
+Slightly out of date, not super exciting...
 
 ## Installation
 
