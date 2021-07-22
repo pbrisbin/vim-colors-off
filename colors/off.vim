@@ -214,6 +214,7 @@ endif
 
 " Fuzzy Search, Telescope & CtrlP
 if colors_off_a_little
-    hi! CtrlPMatch              ctermbg=235 ctermfg=250 guibg=NONE guifg=#5FD7A7 cterm=NONE gui=NONE
-    hi! TelescopeMatching       guifg=#5FD7A7
+    hi! CtrlPMatch                   ctermbg=235 ctermfg=250 guibg=NONE guifg=#5FD7A7 cterm=NONE gui=NONE
+    hi! TelescopeMatching            guifg=#5FD7A7 guibg=#303030 ctermbg=NONE
+    highlight TelescopeSelection     guifg=NONE gui=bold guibg=#303030
 endif
