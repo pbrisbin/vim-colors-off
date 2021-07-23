@@ -16,6 +16,7 @@ if exists('syntax on')
 endif
 
 let g:colors_name='off'
+let colors_off_a_little = get(g:, 'colors_off_a_little', 0)
 
 let s:black           = { "gui": "#212121", "cterm": "0"   }
 let s:medium_gray     = { "gui": "#767676", "cterm": "243" }
@@ -199,7 +200,25 @@ hi link diffAdded         DiffAdd
 hi link SignifySignAdd              LineNr
 hi link SignifySignDelete           LineNr
 hi link SignifySignChange           LineNr
-hi link GitGutterAdd                LineNr
-hi link GitGutterDelete             LineNr
-hi link GitGutterChange             LineNr
-hi link GitGutterChangeDelete       LineNr
+if colors_off_a_little
+    hi! GitGutterAdd guifg=#10A778 ctermfg=2
+    hi! GitGutterChange guifg=#A89C14 ctermfg=3
+    hi! GitGutterDelete guifg=#C30771 ctermfg=1
+    hi! GitGutterChangeDelete guifg=#C30771 ctermfg=1
+else
+    hi link GitGutterAdd                LineNr
+    hi link GitGutterDelete             LineNr
+    hi link GitGutterChange             LineNr
+    hi link GitGutterChangeDelete       LineNr
+endif
+
+" Fuzzy Search, Telescope & CtrlP
+if colors_off_a_little
+    hi! CtrlPMatch                   ctermbg=235 ctermfg=250 guibg=NONE guifg=#5FD7A7 cterm=NONE gui=NONE
+    hi! TelescopeMatching            guifg=#5FD7A7 guibg=#303030 ctermbg=NONE
+    highlight TelescopeSelection     guifg=NONE gui=bold guibg=#303030
+else
+    hi! CtrlPMatch                   ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE cterm=NONE gui=bold
+    hi! TelescopeMatching            guifg=NONE guibg=NONE ctermbg=NONE
+    highlight TelescopeSelection     guifg=NONE gui=bold guibg=#303030
+endif
