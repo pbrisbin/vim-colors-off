@@ -21,8 +21,6 @@ surprising because it's a very colorful colorscheme, but:
 
 ![Screenshot](shot.png)
 
-Slightly out of date, not super exciting...
-
 ## Installation
 
 - Use your preferred plugin manater
