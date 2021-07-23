@@ -25,7 +25,7 @@ Slightly out of date, not super exciting...
 
 ## Installation
 
-- Use you're prefered plugin manater
+- Use your preferred plugin manater
 - Add "pbrisbin/vim-colors-off" as a plugin
 
 ## Usage
