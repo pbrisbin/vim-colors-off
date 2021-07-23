@@ -23,7 +23,7 @@ surprising because it's a very colorful colorscheme, but:
 
 ## Installation
 
-- Use your preferred plugin manater
+- Use your preferred plugin manager
 - Add "pbrisbin/vim-colors-off" as a plugin
 
 ## Usage
